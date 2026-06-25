@@ -1,0 +1,34 @@
+.contact {
+  padding: 120px 8%;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  background: #16213e;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 0 20px rgba(0,229,255,0.15);
+}
+
+.contact-card h3 {
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  color: #cbd5e1;
+}

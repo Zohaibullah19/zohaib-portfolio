@@ -1,0 +1,63 @@
+.education {
+  padding: 120px 8%;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.education-card {
+  background: #16213e;
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 229, 255, 0.2);
+
+  transition: 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 0 20px rgba(0,229,255,0.15),
+    0 0 40px rgba(0,229,255,0.08);
+}
+
+.education-card h3 {
+  color: #00e5ff;
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.institute {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.duration {
+  display: inline-block;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.education-card p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+.light-theme .certification-card {
+  background: white;
+  border: 1px solid #cbd5e1;
+}
+
+.light-theme .certification-card h3 {
+  color: #0f172a;
+}
+
+.light-theme .certification-card p,
+.light-theme .certification-card span {
+  color: #475569;
+}
