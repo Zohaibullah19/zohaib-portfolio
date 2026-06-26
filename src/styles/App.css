@@ -1041,3 +1041,221 @@ body {
 .light-theme .hero-greeting {
   color: #00bcd4 !important;
 }
+/* =========================
+   MOBILE NAVBAR
+========================= */
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #00e5ff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 2001;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 90px;
+    right: -100%;
+
+    width: 260px;
+    height: calc(100vh - 90px);
+
+    background: #0f172a;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 30px;
+
+    padding-top: 40px;
+
+    transition: right 0.35s ease;
+
+    box-shadow: -10px 0 30px rgba(0,0,0,0.25);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+}
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* TABLETS */
+@media (max-width: 1024px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    padding: 140px 6% 80px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-cards {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 130px 20px 60px;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.7rem;
+  }
+
+  .hero-greeting {
+    font-size: 1.3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about,
+  .skills-section,
+  .projects,
+  .experience,
+  .education,
+  .certifications,
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .education-grid,
+  .certifications-container,
+  .experience-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card,
+  .skill-card,
+  .project-card,
+  .education-card,
+  .experience-card,
+  .certificate-card,
+  .contact-card {
+    width: 100%;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text,
+  .project-content p,
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .social-icons a {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
